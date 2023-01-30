@@ -61,7 +61,7 @@ nbunu arabaya yapacagımızdan arabanın divinde animasyonu vericez  👇 */
 
     /* yukarı cıkma etkisi  */
     0% {
-        transform: translateY(2-px);
+        transform: translateY(-1px);
     }
 
     50% {

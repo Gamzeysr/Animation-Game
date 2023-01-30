@@ -31,7 +31,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: right 6s linear infinite;
+    /* animation: right 6s linear infinite; */
     background-repeat: repeat-x;
 
 
@@ -41,7 +41,7 @@ body {
     position: absolute;
     bottom: 55px;
     left: 30%;
-    animation: pop-up 0.8s linear infinite;
+    /* animation: pop-up 0.8s linear infinite; */
 
 }
 
@@ -71,4 +71,13 @@ nbunu arabaya yapacagımızdan arabanın divinde animasyonu vericez  👇 */
     100% {
         transform: translateY(1px);
     }
+}
+
+/* animasyonu game.js de cekip alayım  sonra iflere bağlayayım dıye bunu yapıyoruz  */
+.right {
+    animation: right 6s linear infinite;
+}
+
+.pop-up {
+    animation: pop-up 0.8s linear infinite;
 }

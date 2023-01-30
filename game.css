@@ -31,7 +31,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: right 5s linear infinite;
+    animation: right 6s linear infinite;
     background-repeat: repeat-x;
 
 
@@ -41,6 +41,7 @@ body {
     position: absolute;
     bottom: 55px;
     left: 30%;
+    animation: pop-up 0.8s linear infinite;
 
 }
 
@@ -51,5 +52,23 @@ body {
         transform: translate(-2000px);
     }
 
+}
 
+/* araba yükseklerden atlıyormu gbi olacak 
+nbunu arabaya yapacagımızdan arabanın divinde animasyonu vericez  👇 */
+/* üç tane konum lazım bıze sımdı yukarı cıkıcak asagı ınıcek ortada duracak  */
+@keyframes pop-up {
+
+    /* yukarı cıkma etkisi  */
+    0% {
+        transform: translateY(2-px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(1px);
+    }
 }

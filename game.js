@@ -22,4 +22,25 @@ body.addEventListener('keydown', (e) => {
     }
 })
 
-// if'in içerisinde dedğimizde code enter a basıldıysa 
+// if'in içerisinde dedğimizde code enter a basıldıysa
+
+//* şimdide far acma kapatmayı yapıcaz 👇
+//* far acma kapamada resim bir tane farlı araba var bır tanede farsız araba var.yine aynı mantıkla bır tusa basıldıgında farlı resmi koyacaz bir daha tusa basıldıgında farsız resmı koyacaz.
+const carImg = document.querySelector(".car img");
+let flag = true;
+
+// bunun la ilgilide ayrı bır tus tanımlayalım sımdıde 👇
+body.addEventListener("keydown", (e) => {
+    if (e.code === "Escape") {
+        if (flag) {
+            carImg.setAttribute("src", "./img/Img_06.png")
+            flag = false;
+        } else {
+            carImg.setAttribute("src", "./img/Img_05.png")
+            flag = true;
+
+        }
+    }
+
+});
+// Burada escape tusuna basıldıgında bastan flag deyip true yu kurdgumuz ıcın yanan ışıklı resmi calıstırdık ilk if bloguna girdiği için o resim calıstı sonra tekrar escape tusuna basıldıgında  resetlama için flag=false; dedik else e girdi bu sefer de sönen ısıklı resim calıstı :) 
